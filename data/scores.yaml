@@ -1,0 +1,130 @@
+# v0 calibration set — original editorial scores, not copied from
+# Common Sense Media / Kids-In-Mind / IMDb Parents Guide.
+#
+# Scale: 0 (none) – 5 (family-catalog ceiling). See data/RUBRIC.md.
+# Status: needs-review. Disagree with the number, then the note, then the rubric.
+#
+# max_intensity is max(scary, language, violence, crude, heavy) — Spike 2 default,
+# not the product. The product is per-dimension thresholds.
+
+schema:
+  scale: [0, 5]
+  dimensions: [scary, language, violence, crude, heavy]
+  source: original-judgment
+  review_status: needs-review
+
+movies:
+  - id: luca-2021
+    title: Luca
+    year: 2021
+    studio: pixar
+    mpaa: PG
+    cohort: currently-exciting
+    review_status: needs-review
+    scores:
+      scary: 1
+      language: 1
+      violence: 2
+      crude: 1
+      heavy: 2
+    max_intensity: 2
+    notes:
+      scary: "Sea-monster 'boo' stigma, a storm, a Vespa race. Ercole is a bully, not a monster-under-the-bed."
+      language: "Italian insults (stupido), name-calling. No real swearing."
+      violence: "Bullying, a race crash, chasing, Ercole throwing things. The high-water mark in this film, still mild."
+      crude: "Transformations, underpants gag, a near-kiss. Light."
+      heavy: "Alberto's dad is never coming back — a real abandonment beat, brief, not the whole movie."
+    that_one_scene: "Alberto admitting his father left (heavy, not scare)."
+    triggers: [bullying, abandonment, identity-hiding, water-peril]
+
+  - id: up-2009
+    title: Up
+    year: 2009
+    studio: pixar
+    mpaa: PG
+    cohort: millennial-nostalgia
+    review_status: needs-review
+    scores:
+      scary: 2
+      language: 1
+      violence: 3
+      crude: 1
+      heavy: 5
+    max_intensity: 5
+    notes:
+      scary: "Snarling dogs, a dark cave, the house in the storm, Muntz. Adventure-tense, not nightmare."
+      language: "Mild name-calling. Clean."
+      violence: "Dogs attack, Muntz with a weapon, airship fight, Muntz falls to his death (implied)."
+      crude: "Almost none. Russell is earnest, not crude."
+      heavy: "Ellie dies. Childlessness is implied. The montage is the catalog ceiling for grief. Parents cry; some kids shut down."
+    that_one_scene: "The Ellie montage in the first ten minutes (heavy 5)."
+    triggers: [death-of-spouse, childlessness, guns, dogs-attacking, character-falls-to-death]
+
+  - id: finding-nemo-2003
+    title: Finding Nemo
+    year: 2003
+    studio: pixar
+    mpaa: G
+    cohort: millennial-nostalgia
+    review_status: needs-review
+    scores:
+      scary: 4
+      language: 1
+      violence: 3
+      crude: 1
+      heavy: 4
+    max_intensity: 4
+    notes:
+      scary: "Barracuda cold open, anglerfish (designed as a scare), sharks, jellyfish, Darla. Many young kids cover their eyes. G rating does not capture this."
+      language: "Sharkbait, dummy, mild insults. G-clean."
+      violence: "The barracuda attack (aftermath on screen), predator chases, jellyfish stings, a child shaking a bag of fish."
+      crude: "Almost none. Bruce's jokes are character, not potty."
+      heavy: "Mother and almost all siblings eaten in the first five minutes. The whole plot is separation anxiety and a traumatized parent. Brief compared to Up's grief, but brutal, and it happens to a child character."
+    that_one_scene: "Opening barracuda — mother and eggs gone before the title (scary + heavy)."
+    triggers: [death-of-parent, death-of-siblings, sharks, anglerfish, separation, dentist-office]
+
+  - id: the-incredibles-2004
+    title: The Incredibles
+    year: 2004
+    studio: pixar
+    mpaa: PG
+    cohort: millennial-nostalgia
+    review_status: needs-review
+    scores:
+      scary: 2
+      language: 2
+      violence: 4
+      crude: 2
+      heavy: 2
+    max_intensity: 4
+    notes:
+      scary: "Syndrome, the island, the Omnidroid. Action-tense, not creepy. The plane missile sequence is the scare-adjacent peak, filed mainly under violence."
+      language: "PG insults, 'gosh'/'darn' territory, Syndrome's cruelty. Not real swearing; higher than the G-rated films in this set."
+      violence: "Superhero fights, henchmen thrown, a passenger plane shot down with children aboard, off-screen murder of many supers, Syndrome killed by his cape in a jet turbine. Current catalog 4. A 5 would be more graphic or relentless than this."
+      crude: "Elastigirl's design, teen crush on Tony, light innuendo. The reason this dimension exists."
+      heavy: "Midlife crisis, family strain, implied genocide of supers. Not grief-centered. Kids don't leave this one sad; they leave it amped."
+    that_one_scene: "Missiles vs. the plane, with the kids on board (violence)."
+    triggers: [kids-in-mortal-danger, character-death, missiles, midlife-crisis, innuendo]
+
+  - id: toy-story-3-2010
+    title: Toy Story 3
+    year: 2010
+    studio: pixar
+    mpaa: G
+    cohort: millennial-nostalgia
+    review_status: needs-review
+    scores:
+      scary: 5
+      language: 1
+      violence: 4
+      crude: 1
+      heavy: 4
+    max_intensity: 5
+    notes:
+      scary: "Lotso's daycare, the monkey at the monitor, the dump, the shredder, then the incinerator. Catalog ceiling for scare. The G rating is a trap."
+      language: "Mild. Trash-talk, not swearing."
+      violence: "Toys tortured/imprisoned at Sunnyside, the claw, the incinerator as attempted mass death, Lotso left on the road. Filed as 4 because the incinerator is already carrying scary=5; the violence is intense but still animated peril, not gore."
+      crude: "Ken's wardrobe, light gags. Not the issue."
+      heavy: "Andy grows up. The toys face being abandoned and then actually hold hands to die. Resolves with Bonnie, so not a 5 — Up keeps the loss."
+    that_one_scene: "The incinerator. They hold hands. (scary 5, heavy 4)."
+    triggers: [incinerator, abandonment, daycare, mortality, betrayal, toys-in-peril]
